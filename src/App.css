@@ -1,0 +1,197 @@
+/* App.css */
+
+/* Base Theme & Typography */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #1e1e1e;
+  /* Deep gray, not black */
+  color: #e2e2e2;
+  font-family: Geneva, Verdana, sans-serif;
+}
+
+/* NavBar */
+.nav {
+  background-color: #2a2a2a;
+  padding: 12px 24px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  border-bottom: 1px solid #3a3a3a;
+}
+
+.nav-link {
+  color: #d4d4d4;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.nav-link:hover {
+  background-color: #3b3b3b;
+  color: #ffffff;
+}
+
+.nav-link:active {
+  background-color: #4a4a4a;
+}
+
+/* HomePage */
+.home-page {
+  height: calc(100vh - 60px);
+  /* leaving space for navbar */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.home-page h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #f0f0f0;
+}
+
+.home-page strong {
+  color: #ffffff;
+}
+
+.home-page button {
+  margin-top: 30px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #2f2f2f;
+  color: #dcdcdc;
+  cursor: pointer;
+  transition: background-color 0.25s ease, transform 0.15s ease;
+}
+
+.home-page button:hover {
+  background-color: #3f3f3f;
+  transform: scale(1.03);
+}
+
+.home-page button:active {
+  background-color: #505050;
+}
+
+/* About Page */
+.about-page {
+  min-height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #1e1e1e;
+  color: #e2e2e2;
+}
+
+.about-page h1 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #f0f0f0;
+}
+
+.about-page p {
+  max-width: 600px;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 10px 0;
+  color: #ccc;
+}
+
+.about-page strong {
+  color: #fff;
+}
+
+/* Login.css */
+
+.form-container {
+  max-width: 420px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #2a2a2a;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.form-container h1 {
+  text-align: center;
+  color: #f0f0f0;
+  margin-bottom: 24px;
+  font-size: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #d4d4d4;
+}
+
+input[type="email"],
+input[type="password"] {
+  padding: 10px 12px;
+  margin-bottom: 18px;
+  border: 1px solid #3a3a3a;
+  border-radius: 6px;
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  font-size: 15px;
+}
+
+input[type="submit"],
+button {
+  padding: 10px;
+  margin-top: 8px;
+  font-size: 15px;
+  border: none;
+  border-radius: 6px;
+  background-color: #2f2f2f;
+  color: #e2e2e2;
+  cursor: pointer;
+  transition: background-color 0.25s ease, transform 0.15s ease;
+}
+
+input[type="submit"]:hover,
+button:hover {
+  background-color: #3b3b3b;
+  transform: scale(1.02);
+}
+
+input[type="submit"]:disabled {
+  background-color: #444;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.action-buttons {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 14px;
+  color: #dcdcdc;
+}
+
+.action-buttons a {
+  color: #90e0c4;
+  /* subtle greenish accent */
+  text-decoration: none;
+}
+
+.action-buttons a:hover {
+  text-decoration: underline;
+}
