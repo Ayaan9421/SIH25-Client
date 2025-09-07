@@ -1,9 +1,21 @@
 .Appbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     height:60px;
     width:100%;
-    background-color: black;
+    background-color: rgba(115, 198, 98, 0);
+    backdrop-filter: blur(3px);
     position: sticky;
     top:0;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
+    box-shadow: 0px 2px 10px grey;
+}
+
+.weather{
+    color:rgb(53, 52, 52);
+    border:1px solid rgb(53, 52, 52);
+    border-radius: 10px;
+    padding:0px 10px;
 }
