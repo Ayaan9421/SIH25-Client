@@ -1,0 +1,7 @@
+.box{
+    background-color:rgb(255, 249, 242);
+    flex:1;
+    border-radius: 1rem;
+    margin-top:0.5rem;
+    overflow: auto;
+}
