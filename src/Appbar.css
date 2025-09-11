@@ -4,13 +4,13 @@
     justify-content: space-between;
     height:60px;
     width:100%;
-    background-color: rgba(115, 198, 98, 0);
-    backdrop-filter: blur(3px);
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(14px);
     position: sticky;
     top:0;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
-    box-shadow: 0px 2px 10px grey;
+    box-shadow: 0px 1px 40px grey;
 }
 
 .weather{
