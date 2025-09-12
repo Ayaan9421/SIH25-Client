@@ -5,10 +5,11 @@
     flex-direction: row;
     justify-content:space-between;
     border-radius: 1rem;
-    background-image: url("assets/Gemini_Generated_Image_u3if5nu3if5nu3if.png");
+    background-image: url("assets/Green Crop Rows from Above.png");
     margin:1rem;
     color:white;
-    padding:20px;
+    padding:30px 20px;
+    background-size: cover;
 }
 
 #intro{
