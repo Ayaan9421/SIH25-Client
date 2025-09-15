@@ -9,7 +9,7 @@ import Pagenotfound from './Pagenotfound.jsx';
 import Home from "./Home.jsx";
 import Monitoring from './Monitoring.jsx';
 import Tools from './Tools.jsx';
-import SplashScreen from './Splashscreen.jsx';
+import SplashScreen from './SplashScreen.jsx';
 import Login from './auth/login/Login.jsx';
 import Register from './auth/register/Register.jsx';
 import { AuthProvider } from './context/AuthContext.jsx';

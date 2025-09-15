@@ -8,12 +8,12 @@ export default function Analytics(){
     return(
         <div>
             <div className="eachField">
-                <h4><DeviceThermostatOutlinedIcon style={{color:"green",fontSize:"2rem"}}/>Daily Temperature</h4>
-                <img src={eechart1} alt="unable to load image"/>
+                <h4><WaterDropOutlinedIcon style={{color:"green",fontSize:"2rem"}}/>Daily Temperature</h4>
+                <img src={eechart2} alt="unable to load image"/>
             </div>
             <div className="eachField">
-                <h4><WaterDropOutlinedIcon style={{color:"green",fontSize:"2rem"}}/>Daily Precipitation</h4>
-                <img src={eechart2} alt="unable to load image"/>
+                <h4><DeviceThermostatOutlinedIcon style={{color:"green",fontSize:"2rem"}}/>Daily Precipitation</h4>
+                <img src={eechart1} alt="unable to load image"/>
             </div>
 
         </div>
