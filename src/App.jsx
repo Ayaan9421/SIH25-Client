@@ -1,6 +1,6 @@
 import './App.css';
 
-import { useState,useEffect } from "react";
+import React,{ useState,useEffect } from "react";
 import Maincontent from './Maincontent';
 import Sidebar from './Sidebar';
 import {createBrowserRouter,RouterProvider,Outlet} from "react-router-dom";
@@ -10,6 +10,9 @@ import Home from "./Home.jsx";
 import Monitoring from './Monitoring.jsx';
 import Tools from './Tools.jsx';
 import SplashScreen from './Splashscreen.jsx';
+import Login from './auth/login/Login.jsx';
+import Register from './auth/register/Register.jsx';
+import { AuthProvider } from './context/AuthContext.jsx';
 
 function MainLayout() {
   return (
@@ -24,10 +27,16 @@ function MainLayout() {
 
 const router = createBrowserRouter([
   {
+    path:"/",element:<Login/>,
+  },
+  {
+    path:"/register",element:<Register/>,
+  },
+  {
     element: <MainLayout />,
     children: [
       {
-        path: '/',
+        path: '/home',
         element: <Home />,
       },
       {
@@ -89,7 +98,11 @@ export default function App() {
     return () => clearTimeout(timer);
   }, []);
 
-  return showSplash ? <SplashScreen /> : <RouterProvider router={router} />;
+  return (
+    <AuthProvider>
+      {showSplash ? <SplashScreen/> : <RouterProvider router={router} />}
+    </AuthProvider>
+  )
 }
 
 

@@ -1,0 +1,210 @@
+/* src/auth/login/Login.css */
+
+/* --- General Page Setup --- */
+
+.login-page {
+  background-image: url("src/assets/Gemini_Generated_Image_ax94ulax94ulax94.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex; /* Use flexbox to align children */
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+
+/* --- Left Column: Background Text --- */
+.text-container {
+  width: 50%; /* Take up the left half of the page */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* Align text to the left */
+  padding: 0 5%; /* Add some padding */
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
+  color: white;
+}
+
+.overlay-text {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin: 0px 0px 20px 2rem;
+  max-width: 500px; /* Limit width */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  padding: 0;
+  color:rgb(255, 250, 243)
+}
+
+.overlay-subtext {
+  font-size: 1.5rem;
+  max-width: 600px;
+  line-height: 1.5;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+  margin-left:2rem;
+  opacity: 0.8;
+}
+
+/* --- Right Column: Login Form --- */
+.form-container {
+    width: 50%; /* Take up the right half of the page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+  background-color: rgb(255, 250, 243);
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 0px 35px rgba(58, 58, 58, 0.936);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.login-header h3 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+}
+
+/* --- Form Elements (No changes below this line) --- */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.input-group {
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.input-group input {
+  width: 91%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  background-color: transparent;
+  color: #333;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #27ae60;
+  box-shadow: 0 0 0 3px rgba(39, 174, 96, 0.1);
+}
+
+.error-message {
+  color: #e74c3c;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: #27ae60;
+}
+
+.submit-btn:hover {
+  background-color: #229954;
+  box-shadow: 0 4px 15px rgba(39, 174, 96, 0.2);
+}
+
+.submit-btn:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #aaa;
+  font-weight: 600;
+  font-size: 0.8rem;
+  margin: 1.5rem 0;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.divider:not(:empty)::before {
+  margin-right: 1em;
+}
+
+.divider:not(:empty)::after {
+  margin-left: 1em;
+}
+
+.google-btn {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #333;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.google-btn:hover {
+  background-color: #f9f9f9;
+}
+
+.google-btn:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+  color: #aaa;
+}
+
+.google-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+.footer-link {
+  margin-top: 1.5rem;
+  font-size: 0.875rem;
+  color: #555;
+}
+
+.footer-link a {
+  color: #27ae60;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.footer-link a:hover {
+  text-decoration: underline;
+}
