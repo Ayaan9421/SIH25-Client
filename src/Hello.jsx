@@ -12,7 +12,7 @@ export default function Hello(){
             </div>
             <div id="farms">
                 <p style={{margin:"2px"}}>Total farms</p>
-                <h2 style={{margin:"0px"}}>8</h2>
+                <h2 style={{margin:"0px"}}>4</h2>
             </div>
             
         </div>
