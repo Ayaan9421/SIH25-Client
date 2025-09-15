@@ -1,6 +1,6 @@
 import "./Alertbadge.css"
 
-export default function Alertbadge({alertcolor,text,alertlogo}){
+export default function Alertbadge({alertcolor,text,alertlogo=null}){
     return(
         <div className="Alertbadge" style={{backgroundColor:alertcolor}}>
             <div>{alertlogo}</div>

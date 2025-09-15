@@ -14,6 +14,7 @@ import Login from './auth/login/Login.jsx';
 import Register from './auth/register/Register.jsx';
 import { AuthProvider } from './context/AuthContext.jsx';
 import Analytics from './analyticsAndTools/Analytics.jsx';
+import Farms from './Farms.jsx';
 
 function MainLayout() {
   return (
@@ -50,7 +51,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/farms',
-        element: <Tools type="Farms"/>,
+        element: <Farms/>,
       },
       {
         path: 'reports',
