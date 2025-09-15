@@ -23,8 +23,7 @@ function HomeLayout(){
             <Databox title={"Crop Heath Index"} value={"87%"} change={"+2.1%"} logo={<MonitorHeartOutlinedIcon color="green"/>} alertcolor={"green"} alertlogo={<TrendingUpIcon fontSize="small"/>}/>
             <Databox title={"Soil Moisture"} value={"62%"} change={"-5.3%"} logo={<WaterDropOutlinedIcon/>} alertcolor={"orange"} alertlogo={<TrendingDownIcon fontSize="small"/>}/>
             <Databox title={"Temperature Avg"} value={"24'C"} change={"+1.2%"} logo={<DeviceThermostatOutlinedIcon/>} alertcolor={"green"} alertlogo={<TrendingUpIcon fontSize="small"/>}/>
-            <Link to="/risks">                    <Databox title={"Risk Alerts"} value={"24'C"} change={"2 new"} logo={<WarningAmberOutlinedIcon/>} alertcolor={"red"} alertlogo={<TrendingUpIcon fontSize="small"/>}/>
-            </Link>
+            <Databox title={"Risk Alerts"} value={"24'C"} change={"2 new"} logo={<WarningAmberOutlinedIcon/>} alertcolor={"red"} alertlogo={<TrendingUpIcon fontSize="small"/>}/>
         </div>
         <div className="MapDiv">
             <Map/>

@@ -1,0 +1,14 @@
+.Farmcard{
+    background-color: white;
+    border-radius:1rem;
+    margin:1rem;
+    padding:1rem;
+    border:1px solid antiquewhite;
+    box-shadow: 0px 0px 40px rgba(186, 186, 186, 0.703);
+}
+
+
+.header{
+    display:flex;
+    justify-content: space-between;
+}
