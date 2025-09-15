@@ -16,11 +16,11 @@ const Sidebar = () => {
   return (
     <div className="sidebar-container">
       <div className="top-box">
-        <NavLink to="/" className={({ isActive }) => isActive ? "home-search-item activelight" : "home-search-item"}>
+        <NavLink to="/home" className={({ isActive }) => isActive ? "home-search-item activelight" : "home-search-item"}>
           <FaHome />
           <span>Home</span>
         </NavLink>
-        <NavLink to="/" className={({ isActive }) => isActive ? "home-search-item activelight" : "home-search-item"}>
+        <NavLink to="/home" className={({ isActive }) => isActive ? "home-search-item activelight" : "home-search-item"}>
           <FaSearch />
           <span>Search</span>
         </NavLink>
