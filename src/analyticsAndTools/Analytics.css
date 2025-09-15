@@ -1,0 +1,22 @@
+.eachField{
+    height: auto;
+    width: 94%;
+    border: 1px solid antiquewhite; /* Optional: to see the container boundaries */
+    margin:1rem;
+    padding:1rem;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 40px rgba(186, 186, 186, 0.703);
+}
+
+.eachField img{
+    height:100%;
+    width:100%
+}
+
+.eachField h4{
+    margin:2rem 0 0 2rem;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+}

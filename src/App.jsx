@@ -13,10 +13,11 @@ import SplashScreen from './Splashscreen.jsx';
 import Login from './auth/login/Login.jsx';
 import Register from './auth/register/Register.jsx';
 import { AuthProvider } from './context/AuthContext.jsx';
+import Analytics from './analyticsAndTools/Analytics.jsx';
 
 function MainLayout() {
   return (
-    <div style={{ display: 'flex', height: '100vh', backgroundColor: "rgb(223, 223, 223)"}}>
+    <div style={{ display: 'flex', height: '100vh', backgroundColor: "rgb(223, 223, 223)",width:"100%"}}>
       <Sidebar />
       <Maincontent>
         <Outlet />
@@ -73,7 +74,7 @@ const router = createBrowserRouter([
       },
       {
         path:"/analytics",
-        element:<Tools type="Analytics"/>
+        element:<Analytics/>
       },
       {
         path:"/spectralimaging",
