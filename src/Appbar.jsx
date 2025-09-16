@@ -31,7 +31,7 @@ export default function Appbar(){
            </div>
 
            <div style={{display:"flex",alignItems:"center"}}>
-                <span className="weather">weather,temp</span>
+                <span className="weather">27 °C</span>
                 <AccountCircleOutlinedIcon fontSize="large" style={{margin:"0px 10px",color:"green"}}
                     id="basic-button"
                     aria-controls={open ? 'basic-menu' : undefined}
