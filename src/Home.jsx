@@ -14,6 +14,7 @@ import PendingOutlinedIcon from '@mui/icons-material/PendingOutlined';
 import SettingsInputAntennaOutlinedIcon from '@mui/icons-material/SettingsInputAntennaOutlined';
 import Loading from "./Loading";
 import Map from "./map/Map.jsx";
+import './Home.css'
 
 function HomeLayout(){
     return(
@@ -25,9 +26,12 @@ function HomeLayout(){
             <Databox title={"Temperature Avg"} value={"24'C"} change={"+1.2%"} logo={<DeviceThermostatOutlinedIcon/>} alertcolor={"green"} alertlogo={<TrendingUpIcon fontSize="small"/>}/>
             <Databox title={"Risk Alerts"} value={"24'C"} change={"2 new"} logo={<WarningAmberOutlinedIcon/>} alertcolor={"red"} alertlogo={<TrendingUpIcon fontSize="small"/>}/>
         </div>
-        <div className="MapDiv">
+        <Link to={'/spectralimaging'}>
+        <div className="MapDiv" >
             <Map/>
         </div>    
+        
+        </Link>
     </>
     );
 };

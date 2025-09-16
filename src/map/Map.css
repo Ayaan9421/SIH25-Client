@@ -1,6 +1,7 @@
 .map-container-wrapper {
-  height: 400px;
-  width: 600px;
+  height: auto;
+  width: 80%;
+  aspect-ratio: 16 / 9; /* Maintains a 16:9 aspect ratio */
   border: 1px solid antiquewhite; /* Optional: to see the container boundaries */
   margin:1rem;
   padding:1rem;
